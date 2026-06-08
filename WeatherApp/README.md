@@ -2,6 +2,8 @@
 
 A desktop WPF weather application that integrates with OpenWeatherMap and IMGW (Polish Institute of Meteorology and Water Management) APIs to provide comprehensive weather data and analytics.
 
+![Weather App main window](../docs/screenshots/main-window.png)
+
 ## Features
 
 - **Dual API integration**: OpenWeatherMap and IMGW
@@ -47,10 +49,7 @@ The application displays all required weather parameters:
    - Sign up for a free account
    - Get your API key from the dashboard
 
-2. Update the API key in `Configuration/AppConfig.cs`:
-   ```csharp
-   public const string OpenWeatherMapApiKey = "YOUR_ACTUAL_API_KEY_HERE";
-   ```
+2. Create `apikey.txt` in the `WeatherApp` project folder with your API key (one line, no quotes). This file is gitignored and loaded by `Configuration/AppConfig.cs`.
 
 ### 2. Build and Run
 
